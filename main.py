@@ -1,8 +1,6 @@
 import re
 import string
 import difflib
-from tkinter import *
-import tkinter
 
 def Exit():
     print("Exiting Program!!")
@@ -48,8 +46,4 @@ def checkSpell():
 
 
 #main
-root = tkinter.Tk()
-word = Entry(root)
-word.pack(side=RIGHT)
-#checkSpell()
-root.mainloop()
+checkSpell()
