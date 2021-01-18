@@ -15,26 +15,26 @@ def checkSpell():
             print("Spelling is correct")
             Exit()
         else:
-            continue;
+            continue
 
     file.close()
     file = open("words.txt", "r")
 
     print("Word is incorrectly spelled")
 
-    line = "";
+    line = ""
 
     lines = [word.split(",") for word in file.readlines()]
 
     print("Did you mean ? : ")
 
-    modList = [];
+    modList = []
 
     for words in lines:
         for word in words:
             modList.append(word)
 
-    word = "";
+    word = ""
 
     strippedList = [word.rstrip() for word in modList]
 
